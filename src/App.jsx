@@ -4,12 +4,12 @@ import { ethers } from "ethers";
 import React, { useEffect, useState } from "react";
 import myEpicNft from './utils/MyEpicNFT.json';
 
-const TWITTER_HANDLE = '_buildspace';
+const TWITTER_HANDLE = 'Tanmay_juneja8';
 const TWITTER_LINK = `https://twitter.com/${TWITTER_HANDLE}`;
-const OPENSEA_LINK = '';
-const TOTAL_MINT_COUNT = 50;
+// const OPENSEA_LINK = '';
+// const TOTAL_MINT_COUNT = 50;
 
-const CONTRACT_ADDRESS = "0x70536D9520f757bD74cb24DbD5D081Ca102597CC";
+const CONTRACT_ADDRESS = "0xA70D79598c03664D53335B86Bf886305fe7Cb47D";
 
 const App = () => {
 
@@ -117,7 +117,6 @@ const App = () => {
     }
   }
 
-
   useEffect(() => {
     checkIfWalletIsConnected();
   }, [])
@@ -133,6 +132,7 @@ const App = () => {
       Mint NFT
     </button>
   )
+  
 
   return (
     <div className="App">
@@ -150,7 +150,7 @@ const App = () => {
             className="footer-text"
             href={TWITTER_LINK}
             target="_blank"
-            rel="noreferrer"
+            rel="noopener noreferrer"
           >{`built on @${TWITTER_HANDLE}`}</a>
         </div>
       </div>
